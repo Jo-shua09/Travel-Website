@@ -1,14 +1,12 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import React from "react";
+import React, { useState } from "react";
 
-function handleClick() {
-  document.querySelector(".fa-bars").addEventListener(click, ()=>{
-  document.querySelector(".navbar").classList("add")
-      
-  }
-}
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  function toggleMenu() {
+    setIsOpen(!isOpen);
+  }
 
   return (
     <div className="navbar ">
@@ -23,17 +21,17 @@ const Navbar = () => {
           </li>
           <li className="nav-links">
             <Link to="/about">
-              <i className="fa-solid fa-house"></i>About
+              <i className="fa-solid fa-circle-info"></i>About
             </Link>
           </li>
           <li className="nav-links">
             <Link to="/service">
-              <i className="fa-solid fa-house"></i>Service
+              <i className="fa-solid fa-briefcase"></i>Service
             </Link>
           </li>
           <li className="nav-links">
             <Link to="/contact">
-              <i className="fa-solid fa-house"></i>Contact
+              <i className="fa-solid fa-id-card"></i>Contact
             </Link>
           </li>
           <button className="nav-button">
@@ -42,7 +40,35 @@ const Navbar = () => {
         </ul>
 
         <div className="menu-icons">
-          <i className="fas fa-bars"></i>
+          <i className={`fas ${isOpen ? "fa-times" : "fa-bars"}`} onClick={toggleMenu}></i>
+        </div>
+
+        <div className={isOpen ? "menu-items show" : "menu-items"}>
+          <ul className="menu-list">
+            <li className="nav-links active">
+              <Link to="/">
+                <i className="fa-solid fa-house"></i> Home
+              </Link>
+            </li>
+            <li className="nav-links">
+              <Link to="/about">
+                <i className="fa-solid fa-circle-info"></i>About
+              </Link>
+            </li>
+            <li className="nav-links">
+              <Link to="/service">
+                <i className="fa-solid fa-briefcase"></i>Service
+              </Link>
+            </li>
+            <li className="nav-links">
+              <Link to="/contact">
+                <i className="fa-solid fa-id-card"></i>Contact
+              </Link>
+            </li>
+            <button className="menu-button">
+              <Link to="/signUP">Sign Up</Link>
+            </button>
+          </ul>
         </div>
       </nav>
     </div>

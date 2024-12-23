@@ -26,12 +26,14 @@
   grid-gap: 1rem;
   align-items: center;
 }
+.menu-items .nav-links,
 .nav-menu .nav-links {
   font-weight: 600;
   font-size: 1.2rem;
   white-space: nowrap;
   list-style: none;
 }
+.menu-items .nav-links a,
 .nav-menu .nav-links a {
   padding: 1rem 1.5rem;
   color: #222;
@@ -40,6 +42,7 @@
 .nav-links i {
   padding-right: 0.5rem;
 }
+.menu-items .nav-links a:hover,
 .nav-menu .nav-links a:hover {
   background-color: #01959a;
   color: #fff;
@@ -60,9 +63,87 @@
   background-color: #151516;
   color: #fff;
 }
+.menu-items {
+  box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  width: 95%;
+  position: fixed;
+  top: 14%;
+  right: 0;
+  left: 0;
+  height: auto;
+}
+.menu-items .menu-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1.5rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  padding-bottom: 3rem;
+}
+.menu-list .nav-links {
+  width: 100%;
+  padding: 1.5rem 0rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.menu-list .nav-links:hover {
+  background-color: #01959a;
+}
+.menu-list .nav-links:hover a {
+  color: #fff;
+}
+.menu-button {
+  width: 100%;
+  padding: 1.5rem 0rem;
+  border-radius: 0.5rem;
+  background-color: #01959a;
+  transition: all 0.2s ease-in-out;
+}
+.menu-button a {
+  height: 4rem;
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem 0rem;
+  font-size: 1.5rem;
+  transition: all 0.4s ease-in-out;
+}
+.menu-button:hover {
+  background-color: #054548;
+}
+.menu-button:hover a {
+  color: #fff;
+}
+.menu-items {
+  right: 0;
+  left: -1000%;
+  visibility: hidden;
+  transform-origin: left;
+  transition: all 1s ease;
+}
+.menu-items.show {
+  visibility: visible;
+  left: 0;
+  transition: all 1s ease;
+}
 
+.menu-icons {
+  display: none;
+}
 @media (max-width: 768px) {
   .nav-menu {
     display: none;
+  }
+  .menu-icons {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}
+@media (max-width: 450px) {
+  .menu-items .menu-list a {
+    font-size: 1.5rem;
   }
 }
