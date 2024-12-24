@@ -4,8 +4,11 @@ import Navbar from "../Components/Navbar";
 const Service = () => {
   return (
     <div className="hero-container ">
-      <div className="hero-section ">
+      <div className="navbar-section">
         <Navbar />
+      </div>
+
+      <div className="hero-section ">
         <Hero container="container-hero" cName="section name-text" heroImg="/assets/night.jpg" title="Service" />
       </div>
     </div>

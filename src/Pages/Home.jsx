@@ -4,8 +4,11 @@ import Navbar from "../Components/Navbar";
 const Home = () => {
   return (
     <div className="home-container ">
-      <div className="hero-section ">
+      <div className="navbar-section">
         <Navbar />
+      </div>
+
+      <div className="hero-section ">
         <Hero
           container="hero-container"
           cName="hero-text section"
