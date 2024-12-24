@@ -26,7 +26,7 @@ a {
   cursor: pointer;
 }
 .section {
-  padding: 5rem 6%;
+  padding: 4rem 5%;
 }
 @media (max-width: 991px) {
   html {

@@ -7,6 +7,8 @@
   top: 3.5rem;
   right: 0;
   left: 0;
+  z-index: 100;
+  background-color: #fff;
 }
 .nav-items {
   display: flex;
@@ -74,6 +76,8 @@
   left: 0;
   height: auto;
   display: none;
+  z-index: 100;
+  background-color: #fff;
 }
 .menu-items .menu-list {
   display: flex;
@@ -146,9 +150,15 @@
     top: 11rem;
     display: block;
   }
+  .nav-logo {
+    font-size: 3rem;
+  }
 }
 @media (max-width: 450px) {
   .menu-items .menu-list a {
     font-size: 1.7rem;
+  }
+  .nav-logo {
+    font-size: 3rem;
   }
 }

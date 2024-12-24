@@ -7,6 +7,7 @@ const Navbar = () => {
   function toggleMenu() {
     setIsOpen(!isOpen);
   }
+  window.removeEventListener("scroll", toggleMenu);
 
   return (
     <div className="navbar ">
