@@ -69,10 +69,11 @@
   border-radius: 0.5rem;
   width: 90%;
   position: fixed;
-  top: 14%;
+  top: auto;
   right: 0;
   left: 0;
   height: auto;
+  display: none;
 }
 .menu-items .menu-list {
   display: flex;
@@ -142,7 +143,8 @@
     font-weight: bold;
   }
   .menu-items {
-    top: 15%;
+    top: 11rem;
+    display: block;
   }
 }
 @media (max-width: 450px) {
@@ -150,6 +152,6 @@
     font-size: 1.7rem;
   }
   .menu-items {
-    top: 13.5%;
+    top: 11rem;
   }
 }
