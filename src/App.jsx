@@ -3,7 +3,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Service from "./Pages/Service";
 import Contact from "./Pages/Contact";
-import SignUP from "./Pages/SignUP";
+import SignUp from "./Pages/SignUp";
 import PageNotFound from "./Pages/PageNotFound";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/service" element={<Service />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/signup" element={<SignUP />}></Route>
+          <Route path="/signup" element={<SignUp />}></Route>
           <Route path="*" element={<PageNotFound />}></Route>
         </Routes>
       </BrowserRouter>
