@@ -6,6 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   function toggleMenu() {
     setIsOpen(!isOpen);
+    window.removeEventListener("scroll", toggleMenu);
   }
   window.removeEventListener("scroll", toggleMenu);
 

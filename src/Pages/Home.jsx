@@ -1,3 +1,4 @@
+import Destination from "../Components/Destination";
 import Hero from "../Components/Hero";
 import Navbar from "../Components/Navbar";
 
@@ -19,6 +20,10 @@ const Home = () => {
           url="/"
           btntext="travel plan"
         />
+      </div>
+
+      <div className="destination-section section">
+        <Destination />
       </div>
     </div>
   );

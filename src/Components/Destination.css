@@ -1,0 +1,80 @@
+.destination-container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.destination-container h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #222;
+  line-height: 5rem;
+}
+.destination-container p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #222;
+  text-transform: none;
+}
+.dest-desc {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+.dest-one {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+}
+.dest-one:nth-child(2) {
+  flex-wrap: wrap-reverse;
+}
+.dest-text {
+  flex: 1 1 30rem;
+  width: 100%;
+  text-align: left;
+}
+.dest-images {
+  flex: 1 1 45rem;
+  width: 100%;
+}
+.dest-one .dest-text h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #222;
+  padding-bottom: 0.8rem;
+}
+.dest-one .dest-text p {
+  font-weight: 1.5rem;
+  font-weight: 400;
+  color: #222;
+  line-height: 2.5rem;
+}
+.dest-one .dest-images {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+  margin-right: 1.2rem;
+}
+.dest-one .dest-images img {
+  border-radius: 0.5rem;
+  width: 50%;
+  height: 35rem;
+  object-fit: cover;
+  box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.2);
+}
+.dest-one .dest-images img:first-of-type {
+  margin-top: 3rem;
+}
+
+@media (max-width: 450px) {
+  .dest-text {
+    text-align: center;
+  }
+  .dest-desc {
+    gap: 7rem;
+  }
+}
