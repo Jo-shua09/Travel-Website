@@ -2,11 +2,11 @@ import "./Hero.css";
 
 const Hero = (props) => {
   return (
-    <div className="hero-container">
+    <div className={props.container}>
       <div className="image">
         <img src={props.heroImg} alt="" />
       </div>
-      <div className="hero-text section">
+      <div className={props.cName}>
         <h1>{props.title}</h1>
         <p>{props.text}</p>
         <a href={props.url}>

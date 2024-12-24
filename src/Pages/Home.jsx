@@ -7,6 +7,8 @@ const Home = () => {
       <div className="hero-section ">
         <Navbar />
         <Hero
+          container="hero-container"
+          cName="hero-text section"
           heroImg="/assets/12.jpg"
           title="Your journey your story"
           text="choose your favourite destination"

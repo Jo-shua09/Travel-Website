@@ -1,3 +1,4 @@
+.container-hero,
 .hero-container {
   text-align: center;
   width: 100%;
@@ -10,12 +11,21 @@
   height: 100vh;
   object-fit: cover;
 }
+.container-hero .image img {
+  width: 100%;
+  height: 70vh;
+}
+.name-text,
 .hero-text {
   position: absolute;
   top: 30%;
   right: 0;
   left: 0;
 }
+.name-text {
+  top: 30%;
+}
+.name-text h1,
 .hero-text h1 {
   font-size: 5rem;
   color: #fff;
