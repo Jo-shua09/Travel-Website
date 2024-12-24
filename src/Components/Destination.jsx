@@ -1,4 +1,5 @@
 import "./Destination.css";
+import DestinationData from "./DestinationData";
 
 const Destination = () => {
   return (
@@ -7,39 +8,16 @@ const Destination = () => {
       <p>Tours give you the opportunity to see a lot within a time frame.</p>
 
       <div className="dest-desc">
-        <div className="dest-one">
-          <div className="dest-text">
-            <h2>Taal Volcano, batanges</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem animi enim consectetur est nulla, sequi tempore reiciendis quidem ratione,
-              neque, voluptatem totam ducimus doloribus labore laboriosam. Quisquam harum fugiat temporibus aliquam dolor quae? Quasi pariatur porro
-              omnis numquam autem explicabo eos architecto delectus possimus tempora! Ad non porro doloremque esse praesentium, dolorem temporibus
-              optio explicabo.
-            </p>
-          </div>
-
-          <div className="dest-images">
-            <img src="/assets/1.jpg" alt="" />
-            <img src="/assets/2.jpg" alt="" />
-          </div>
-        </div>
-
-        <div className="dest-one">
-          <div className="dest-images">
-            <img src="/assets/1.jpg" alt="" />
-            <img src="/assets/2.jpg" alt="" />
-          </div>
-
-          <div className="dest-text">
-            <h2>Taal Volcano, batanges</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem animi enim consectetur est nulla, sequi tempore reiciendis quidem ratione,
-              neque, voluptatem totam ducimus doloribus labore laboriosam. Quisquam harum fugiat temporibus aliquam dolor quae? Quasi pariatur porro
-              omnis numquam autem explicabo eos architecto delectus possimus tempora! Ad non porro doloremque esse praesentium, dolorem temporibus
-              optio explicabo.
-            </p>
-          </div>
-        </div>
+        <DestinationData
+          heading="Taal Volcano, batanges"
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem animi enim consectetur est nulla, sequi tempore reiciendis quidem ratione, neque, voluptatem totam ducimus doloribus labore laboriosam. Quisquam harum fugiat temporibus aliquam dolor quae? Quasi pariatur porro omnis numquam autem explicabo eos architecto delectus possimus tempora! Ad non porro doloremque esse praesentium, dolorem temporibus optio explicabo."
+          imageOne="/assets/1.jpg"
+          imageTwo="/assets/2.jpg"
+          headingTwo="mt. daguldul, batangas"
+          textTwo="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem animi enim consectetur est nulla, sequi tempore reiciendis quidem ratione, neque, voluptatem totam ducimus doloribus labore laboriosam. Quisquam harum fugiat temporibus aliquam dolor quae? Quasi pariatur porro omnis numquam autem explicabo eos architecto delectus possimus tempora! Ad non porro doloremque esse praesentium, dolorem temporibus optio explicabo."
+          imageThree="/assets/5.jpg"
+          imageFour="/assets/8.jpg"
+        />
       </div>
     </div>
   );

@@ -14,22 +14,22 @@
   font-weight: 400;
   color: #222;
   text-transform: none;
+  margin-bottom: 4rem;
 }
 .dest-desc {
-  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   gap: 10rem;
 }
 .dest-one {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   align-items: center;
   gap: 3rem;
   width: 100%;
 }
 .dest-one:nth-child(2) {
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
 }
 .dest-text {
   flex: 1 1 30rem;
@@ -76,5 +76,8 @@
   }
   .dest-desc {
     gap: 7rem;
+  }
+  .dest-one .dest-images img {
+    height: 32rem;
   }
 }

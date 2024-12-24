@@ -1,6 +1,7 @@
 import Destination from "../Components/Destination";
 import Hero from "../Components/Hero";
 import Navbar from "../Components/Navbar";
+import Trip from "../Components/Trip";
 
 const Home = () => {
   return (
@@ -24,6 +25,10 @@ const Home = () => {
 
       <div className="destination-section section">
         <Destination />
+      </div>
+
+      <div className="trip-section section">
+        <Trip />
       </div>
     </div>
   );
