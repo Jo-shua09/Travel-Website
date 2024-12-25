@@ -90,7 +90,7 @@
 }
 .menu-list .nav-links {
   width: 100%;
-  padding: 1.5rem 0rem;
+  padding: 2rem 0rem;
   border-radius: 0.5rem;
   cursor: pointer;
 }
@@ -102,7 +102,7 @@
 }
 .menu-button {
   width: 100%;
-  padding: 1.5rem 0rem;
+  padding: 2rem 0rem;
   border-radius: 0.5rem;
   background-color: #01959a;
   transition: all 0.2s ease-in-out;
@@ -111,7 +111,7 @@
   height: 4rem;
   color: #fff;
   font-weight: 600;
-  padding: 1rem 0rem;
+  padding: 1.5rem 0rem;
   font-size: 1.5rem;
   transition: all 0.4s ease-in-out;
 }
@@ -147,7 +147,7 @@
     font-weight: bold;
   }
   .menu-items {
-    top: 11rem;
+    top: 8.3rem;
     display: block;
   }
   .nav-logo {
