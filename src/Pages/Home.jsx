@@ -1,4 +1,5 @@
 import Destination from "../Components/Destination";
+import Footer from "../Components/Footer";
 import Hero from "../Components/Hero";
 import Navbar from "../Components/Navbar";
 import Trip from "../Components/Trip";
@@ -29,6 +30,10 @@ const Home = () => {
 
       <div className="trip-section section">
         <Trip />
+      </div>
+
+      <div className="footer-section">
+        <Footer />
       </div>
     </div>
   );

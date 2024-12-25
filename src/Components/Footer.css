@@ -1,0 +1,72 @@
+.footer-container {
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.footer-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+.footer-desc .f-left {
+  flex: 1 1 45rem;
+  width: 100%;
+}
+.f-left h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+}
+.f-left p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+  text-transform: none;
+}
+.f-right {
+  display: flex;
+  gap: 1rem;
+}
+.f-right i {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #222;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  object-fit: contain;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 100%;
+}
+.footer-links .f-links {
+  flex: 1 1 20rem;
+  width: 100%;
+}
+.f-links h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  padding-bottom: 1.2rem;
+}
+.f-links a {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #fff;
+  padding-bottom: 0.6rem;
+  display: block;
+}
+.f-links a:hover {
+  text-decoration: underline;
+}
