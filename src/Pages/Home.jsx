@@ -1,8 +1,8 @@
 import Destination from "../Components/Destination";
-import Footer from "../Components/Footer";
 import Hero from "../Components/Hero";
 import Navbar from "../Components/Navbar";
 import Trip from "../Components/Trip";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
         <Navbar />
       </div>
 
-      <div className="hero-section ">
+      <div className="hero-section home-hero ">
         <Hero
           container="hero-container"
           cName="hero-text section"

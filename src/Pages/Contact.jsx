@@ -1,5 +1,7 @@
 import Hero from "../Components/Hero";
 import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
+import ContactForm from "../Components/ContactForm";
 
 const Contact = () => {
   return (
@@ -10,6 +12,14 @@ const Contact = () => {
 
       <div className="hero-section ">
         <Hero container="container-hero" cName="section name-text" heroImg="/assets/2.jpg" title="Contact" />
+      </div>
+
+      <div className="contact-section section">
+        <ContactForm />
+      </div>
+
+      <div className="footer-section">
+        <Footer />
       </div>
     </div>
   );
