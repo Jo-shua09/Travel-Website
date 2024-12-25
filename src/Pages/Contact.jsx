@@ -15,7 +15,7 @@ const Contact = () => {
       </div>
 
       <div className="contact-section section">
-        <ContactForm />
+        <ContactForm title="Send a message to us!" holder3="Subject" textarea="message" />
       </div>
 
       <div className="footer-section">

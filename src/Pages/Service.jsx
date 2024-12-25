@@ -11,7 +11,7 @@ const Service = () => {
       </div>
 
       <div className="hero-section ">
-        <Hero container="container-hero" cName="section name-text" heroImg="/assets/night.jpg" title="Service" />
+        <Hero container="container-hero" cName="section name-text" heroImg="/assets/10.jpg" title="Service" />
       </div>
 
       <div className="trip-section section">
